@@ -97,7 +97,8 @@
 #include "src/fips202/native/aarch64/src/keccak_f1600_x4_v8a_scalar_hybrid_asm.S"
 #include "src/fips202/native/aarch64/src/keccak_f1600_x4_v8a_v84a_scalar_hybrid_asm.S"
 #endif /* MLK_SYS_AARCH64 */
-#if defined(MLK_SYS_X86_64)
+#if defined(MLK_SYS_X86_64) && defined(MLK_SYS_X86_64_AVX512)
+#include "src/fips202/native/x86_64/src/keccak_f1600_x4_avx512_asm.S"
 #endif
 #endif /* MLK_CONFIG_USE_NATIVE_BACKEND_FIPS202 */
 

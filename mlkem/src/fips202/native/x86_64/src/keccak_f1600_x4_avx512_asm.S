@@ -393,9 +393,9 @@ leaq    iotas_avx512(%rip), TBLPTR            # Load the address of the SHA3 rou
 #    ret
 #.cfi_endproc
 
-.globl	keccakf1600_x4_avx512vl
+.globl	mlk_keccakf1600_x4_avx512vl
 .align  32
-keccakf1600_x4_avx512vl:
+mlk_keccakf1600_x4_avx512vl:
 .cfi_startproc
     endbr64
     #save_xmm6_xmm15();

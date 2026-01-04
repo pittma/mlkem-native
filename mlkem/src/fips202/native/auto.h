@@ -15,7 +15,8 @@
 #include "aarch64/auto.h"
 #endif
 
-#if defined(MLK_SYS_X86_64) && defined(MLK_SYS_X86_64_AVX2)
+#if defined(MLK_SYS_X86_64) && \
+    (defined(MLK_SYS_X86_64_AVX2) || defined(MLK_SYS_X86_64_AVX512))
 #include "x86_64/xkcp.h"
 #endif
 
