@@ -293,7 +293,7 @@
  *
  *****************************************************************************/
 #if !defined(MLK_CONFIG_USE_NATIVE_BACKEND_FIPS202)
-/* #define MLK_CONFIG_USE_NATIVE_BACKEND_FIPS202 */
+#define MLK_CONFIG_USE_NATIVE_BACKEND_FIPS202 */
 #endif
 
 /******************************************************************************
